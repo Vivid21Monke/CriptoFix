@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    margin: 0px;
+    padding:0px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.container{
+    line-height: 1;
+    background-color: #eeeded;
+    background-image: linear-gradient(135deg, #5ab9ea, #9960d0);
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.container__nav{
+box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: white;
+  align-items: center;
+  height: 80px;
+  border: solid;
+  border-color: #ADBBDA;
+  border-width: 0.5px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 95%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  
+}
+.Our-Logo-Name{
+padding-right: 100px;
+}
+.Main-Nav-Button, .Info-Nav-Button, .meme-Nav-Button{
+    margin: 20px;
+}
+.container__main__crypto, .continer__extra_prices{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 8px;
+    height: 80%;
+    width: 55%;
+    margin-left: 2rem;
+    overflow-y: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-color: #80808099 #0000;
+  scrollbar-width: thin;
+}
+.curency-individual{
+    padding: 10px;
+}
+
+.container__big__main__extra {
+    display: flex;
+    flex-direction: row;
+}
+.container__Border__all {
+    border: solid;
+    border-width: .5px;
+    margin: 1%;
+    border-radius: 8px;
+}
