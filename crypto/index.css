@@ -78,13 +78,13 @@ padding-right: 100px;
 .Main-Nav-Button, .Info-Nav-Button, .meme-Nav-Button{
     margin: 20px;
 }
-.container__main__crypto, .continer__extra_prices{
+.container__main__crypto{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     background-color: white;
     border-radius: 8px;
-    height: 80%;
+    height:700px;
     width: 55%;
     margin-left: 2rem;
     overflow-y: auto;
@@ -107,3 +107,20 @@ padding-right: 100px;
     margin: 1%;
     border-radius: 8px;
 }
+.Big__Flex {
+    display: flex;
+    flex-direction: row;
+}
+.continer__extra_prices {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 8px;
+    height:700px;
+    width: 37.5%;
+    margin-left: 2rem;
+}
+.chart-container {
+    width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+  }
