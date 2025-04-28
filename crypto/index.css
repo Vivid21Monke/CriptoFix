@@ -1,5 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -18,14 +17,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
 ol, ul {
 	list-style: none;
@@ -47,11 +45,11 @@ table {
 
 .container{
     line-height: 1;
-    background-color: #eeeded;
+    background-color: #ededee;
     background-image: linear-gradient(135deg, #5ab9ea, #9960d0);
-    height: 100vh;
-    width: 100vw;
     box-sizing: border-box;
+    padding-bottom: 15px;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .container__nav{
@@ -70,13 +68,82 @@ box-sizing: border-box;
   width: 95%;
   margin-right: 2rem;
   margin-left: 2rem;
-  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
 }
-.Our-Logo-Name{
-padding-right: 100px;
-}
-.Main-Nav-Button, .Info-Nav-Button, .meme-Nav-Button{
+
+
+.button-85 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     margin: 20px;
+  }
+  
+  .button-85:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+.Our-Logo-Name{
+    font-family: "Space Mono", monospace;
+    padding-right: 100px;
 }
 .container__main__crypto{
     display: flex;
@@ -92,20 +159,29 @@ padding-right: 100px;
   white-space: nowrap;
   scrollbar-color: #80808099 #0000;
   scrollbar-width: thin;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
 }
 .curency-individual{
     padding: 10px;
 }
-
+.container__Crypto__Name{
+    padding-bottom: 8px;
+}
 .container__big__main__extra {
     display: flex;
     flex-direction: row;
 }
 .container__Border__all {
+    display: flex;
+    flex-direction: column;
     border: solid;
     border-width: .5px;
     margin: 1%;
     border-radius: 8px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    align-items: center;
+    padding: 8px;
 }
 .Big__Flex {
     display: flex;
@@ -122,5 +198,5 @@ padding-right: 100px;
 .chart-container {
     width: 100%;
     overflow-x: auto; 
-    white-space: nowrap; 
+    white-space: nowrap;
   }

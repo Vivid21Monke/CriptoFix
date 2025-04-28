@@ -22,6 +22,7 @@ $coinsJson = json_encode($coins);
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crypto</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 <body>
@@ -30,12 +31,16 @@ $coinsJson = json_encode($coins);
   <!-- Navigation -->
 
   <div class="container__nav">
-    <div class="Our-Logo-Name">Crypto</div>
-    <div class="conntainer__nav__buttons">
-      <button class="Main-Nav-Button">Main</button>
-      <button class="Info-Nav-Button">Info</button>
-      <button class="meme-Nav-Button">Buy/Sell</button>
-    </div> 
+    <div class="Our-Logo-Name"><h1>CryptoCur</h1></div>
+      <div>
+          <button class="button-85" role="button">Main</button>
+      </div>
+      <div>
+          <button class="button-85" role="button">Info</button>
+      </div>
+      <div>
+          <button class="button-85" role="button">Buy/Sell</button>
+      </div>
   </div> 
   <div class="Big__Flex">
 
