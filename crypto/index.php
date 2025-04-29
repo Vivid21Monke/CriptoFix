@@ -20,7 +20,7 @@ $coinsJson = json_encode($coins);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto</title>
+  <title>CryptoCur</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli">
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
